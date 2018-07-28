@@ -42,8 +42,15 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid"></img> 
+                <div class="col-12 col-sm-6">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 align-self-center">
+                            <img src="img/logo.png" class="img-fluid"></img> 
+                        </div>
+                        <div class="col-12 col-sm-6 align-self-center">
+                            <a href="#reserveTable" role="button" class="btn btn-block btn-warning">Reserve Table</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,9 +81,15 @@
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col-12 col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col-12 col-sm order-sm-last col-md">
+                <div class="media">                    
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>      
+                    <img class="d-flex ml-3 img-thumbnail align-self-center"
+                            src="img/buffet.png" alt="Buffet">              
+                </div>
             </div>
         </div>
 
@@ -95,9 +108,74 @@
                             International experience having worked closely with
                             whos-who in the culinary world, he specializes in
                             creating mouthwatering Indo-Italian fusion experiences.
-                            </p>
+                        </p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-md-2">
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form id="reserveTable">
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-3 col-md-2">
+                                    <label for="emailid" class="col-form-label">Number of Guests</label>
+                                </div>
+                                <div class="col-12 col-md-10">
+                                    <div class="form-check-inline">
+                                        <input type="radio" id="guestsIdOne" name="guestsId" class="form-check-input" checked>
+                                        <label class="form-check-label" for="guestsIdOne"> 1 </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" id="guestsIdTwo" name="guestsId" class="form-check-input">
+                                        <label class="form-check-label" for="guestsIdTwo"> 2 </label>
+                                    </div>
+                                    <div class="form-check-inline">   
+                                        <input type="radio" id="guestsIdThree" name="guestsId" class="form-check-input">
+                                        <label class="form-check-label" for="guestsIdThree"> 3 </label>
+                                    </div>
+                                    <div class="form-check-inline">      
+                                        <input type="radio" id="guestsIdFour" name="guestsId" class="form-check-input">
+                                        <label class="form-check-label" for="guestsIdFour"> 4 </label>
+                                    </div>
+                                    <div class="form-check-inline">      
+                                        <input type="radio" id="guestsIdFive" name="guestsId" class="form-check-input">
+                                        <label class="form-check-label" for="guestsIdFive"> 5 </label>
+                                    </div>
+                                    <div class="form-check-inline">      
+                                        <input type="radio" id="guestsIdSix" name="guestsId" class="form-check-input">
+                                        <label class="form-check-label" for="guestsIdSix"> 6 </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-3 col-md-2">
+                                    <label for="date" class="col-form-label">Date and Time</label>
+                                </div>
+                                <div class="col-12 col-sm-3 col-md-4">
+                                    <input type="input" class="form-control" name="approve" id="approve" placeholder="Date"></input>
+                                </div>
+                                <div class="col-12 col-sm-3 col-md-4">
+                                    <input type="input" class="form-control" name="approve" id="approve" placeholder="Time"></input>
+                                </div>
+                                <div class="col-12 col-sm-3 col-md">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12 offset-sm-3 offset-md-2">
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
             </div>
         </div>
     </div>
